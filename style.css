@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri&effect=neon');
+
+header {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+body {
+    margin-top: 200px;
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: "El Messiri", sans-serif;
+}
+
+nav {
+    float: top;
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    background-color: #969696 ;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+}
+
+nav a:active{
+    color: #323232
+}
+
+nav a:visited{
+    color: #646464
+}
+
+.aside {
+    margin-top: -20px;
+    position: sticky;
+    top: 150px;
+    height: auto;
+    float: right;
+    width: 20%;
+}
+
+.aside aside {
+    background: #303030;
+    border-radius: 20px 0 0 20px;
+    padding-left: 10px;
+}
+
+.aside aside:hover{
+    background-color: #353535;
+}
+
+.aside a {
+    color:white;
+}
+
+dd{
+    text-align: left;
+}
+
+dt{
+    text-align: left;
+}
+
+ul{
+    text-align: left;
+}
+
+li{
+    text-align: left;
+}
+
+section {
+    background: #303030;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 0 20px 20px 0;
+    width: 75%;
+}
+
+section a {
+    text-decoration: none;
+    color: aqua;
+}
+
+address {
+    float: bottom;
+    display: block;
+}
+
+address p {
+    display: inline-block;
+    margin-left: 30px;
+    background-color: #353535;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+address a:active{
+    color: #505050;
+}
+
+address a:visited{
+    color: #757575;
+}
+
+#logo {
+    position: absolute;
+}
+
+form {
+    background: #303030;
+    display: block;
+    border-radius: 20px;
+    width: 40%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: left;
+    padding: 5px 20px 20px;
+}
+
+button {
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #404040;
+    color: white;
+    padding: 5px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+input {
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #505050;
+    color: white;
+}
+
+input:focus{
+    border-color: white;
+}
+
+textarea {
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #505050;
+    color: white;
+}
+
+header > a{
+    position: absolute;
+    left: 80%;
+    top: 25px;
+
+    background-color: #A5A5A5;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+header > a:active{
+    color: #323232;
+}
+
+input::placeholder{
+    color: #A5A5A5;
+}
+
+textarea::placeholder{
+    color: #A5A5A5;
+}
