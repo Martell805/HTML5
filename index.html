@@ -2,28 +2,36 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/images/logo.png">
         <title>Электронная библиотека</title>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile.css">
     </head>
     <body>
 
     <header>
         <a href="register.html">Зарегистрироваться</a>
-
         <h1 id="main" class="font-effect-neon"><strong>Электронная библиотека</strong></h1>
-        <nav>
-            <ul id="contents">
-                <li><a href="#popular">Популярные сейчас</a></li>
-                <li><a href="#read">Прочитанные вами</a></li>
-                <li><a href="#info">Общая информация</a></li>
-                <li><a href="#history">История</a></li>
-                <li><a href="#video">Видео</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
+
+        <div class="hamburger-menu">
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <nav class="menu__box">
+                <ul id="contents">
+                    <li><a class="menu__item" href="#popular">Популярные сейчас</a></li>
+                    <li><a class="menu__item" href="#read">Прочитанные вами</a></li>
+                    <li><a class="menu__item" href="#info">Общая информация</a></li>
+                    <li><a class="menu__item" href="#history">История</a></li>
+                    <li><a class="menu__item" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -49,7 +57,7 @@
 
             <aside>
                 <p><a href="https://www.google.com/" target="_blank">Здесь можно найти все книги!</a></p>
-                <img src = "/images/google.jpg" usemap = "#google_image" alt = "Выбор ссылки без выбора" width="250">
+                <img src = "/images/google.jpg" usemap = "#google_image" alt = "Выбор ссылки без выбора" width="200">
                 <map name = "google_image">
                     <area shape="rect" coords="0,0,125,125" href="https://www.google.com/" alt="Ссылка на гугл">
                     <area shape="circle" coords="150,72,25" href="https://www.google.com/" alt="Вторая ссылка на гугл">
@@ -106,15 +114,6 @@
             </section>
         </article>
 
-        <article>
-            <section class="left-side-section">
-                <h2 id="video"><i>Видео про книги:</i></h2>
-                <iframe width="600" height="250" src="https://www.youtube.com/embed/9-cv_kL1NTs" title="Польза Чтения. Зачем Нужно Читать. Влияние Книги на Человека" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-        </article>
-    </main>
-
-    <footer>
         <section>
             <address>
                 <h2 id="contacts">Контакты:</h2>
@@ -122,6 +121,7 @@
                 <p><a href="mailto:fakemail@gmail.com">Написать письмо в тех поддержку</a></p>
             </address>
         </section>
-    </footer>
+    </main>
+
     </body>
 </html>
